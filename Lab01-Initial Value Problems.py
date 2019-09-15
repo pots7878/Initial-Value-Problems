@@ -451,7 +451,7 @@ print("\nSlope of the log log plot ", round(m,6))
 # m = \frac{\log{(\frac{error[-1])}{error[-2]}})}{\log{(\frac{dt[-1])}{dt[-2]}})}
 # \end{equation*}
 
-# The calculated slope is m = 1.015096 which suggests that the rate of convergence is linear of order O(h).
+# The calculated slope is m = 1.015096 which suggests as dt is reduced, the error is going to zero. More precisely, the error goes down by a factor of 2 every time dt is halved. Therefore, the rate of convergence is linear of order O(dt).
 
 # ## Backward Euler
 
@@ -582,4 +582,4 @@ print("\nSlope of the log log plot ", round(m,6))
 # m = \frac{\log{(\frac{error[-1])}{error[-2]}})}{\log{(\frac{dt[-1])}{dt[-2]}})}
 # \end{equation*}
 
-# The calculated slope is m = 0.985037 which suggests that the rate of convergence is linear of order O(h).
+# The calculated slope is m = 0.985037 which suggests as dt is reduced, the error is going to zero. More precisely, the error goes down by a factor of 2 every time dt is halved. Therefore, the rate of convergence is linear of order O(dt).
